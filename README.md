@@ -9,4 +9,17 @@ We currently have PROM dumps from three different card types:
 - DIM-1003 CPU card using the Z-80 processor. Most of the work has
   been focused around this card.
   
-  
+
+Tools
+------
+
+### combine_proms_z80.py 
+
+Uses the known PROM dumps to create PROM 0 and 1 to use in the Mycro
+emulator. There are some differences in the PROM contents, so this
+tool tries to combine them to a set of PROMS that are hopefully close
+enough to the original version. 
+
+The output is stored in the "gen" subdirectory (automatically created
+if not already present).
+
